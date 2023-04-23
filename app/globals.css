@@ -2,26 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* for google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;900&display=swap');
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* custom styles */
+* {
+    transition: 1.2s cubic-bezier(.17,.85,.438,.99);
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    font-family: 'Open Sans', sans-serif;
+    color: #6a6a8e;
+}
+
+/* custom base */
+@layer base {
+    p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+}
+
+/* custom components */
+@layer components {
+    .btn {
+        @apply inline-block font-medium text-white rounded-full px-6 py-3 overflow-hidden relative;
+    }
+    .btn::before {
+        @apply absolute bg-[rgba(255,255,255,.2)] rounded-full w-[200px] h-[200px] top-[-10%] right-[-130px];
+        content: '';
+        transition: 0.3s;
+    }
+    .btn:hover::before {
+        @apply top-[-5%] right-[-100px];
+    }
+    .btn-1 {
+        background: linear-gradient(to right,#673AB7 0,#2196F3 100%);
+        box-shadow: 0 10px 15px 0 rgb(56 0 189 / 20%);
+    }
+    .btn-pink {
+        @apply px-8;
+        background: linear-gradient(to right,#ffbd84 0,#ff1f8e 100%);
+        box-shadow: 0 10px 15px 0 rgb(175 0 87 / 20%);
+    }
+}
+
+/* custom utilities */
+@layer utilities {
+    .text-blue {
+        color: #050748;
+    }
+    .text-pink {
+        color: #e60072;
+    }
+}
+
+/* more custom styles */
+.home-banner::before {
+    background: url('/banner-shap-2.png');
+}
+.home-about {
+    background: url('/about-dot_bg.png');
+}
+.home-service::before {
+    background: url('/service-dot-shape.png') center top #d7f0fd;
+}
+.home-service .card {
+    background: url('/service-card-bg.png') top right no-repeat #fff;
+}
+.home-product::before {
+    background: url('/product-dot-pattern.png');
+}
+.home-testimonial {
+    background-image: url('/testimonial-bg.png');
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
 }
