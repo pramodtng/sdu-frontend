@@ -1,184 +1,128 @@
-import React from 'react'
-
+/* eslint-disable @next/next/no-img-element */
 const Blogs = () => {
   return (
-    <section className='lg:py-20 py-8'>
-      <div className="container max-w-6xl mx-auto px-3">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-          <div className="shadow rounded-xl overflow-hidden">
-            <div className='w-full h-48'>
-              <a href="/blog/id">
-                <img src= '/blog-dg-3.jpg' alt="blog img" className="w-full h-full object-cover" />
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <img
+            src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+            className="object-cover w-full h-64"
+            alt=""
+          />
+          <div className="p-5 border border-t-0">
+            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a
+                href="/"
+                className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                aria-label="Category"
+                title="traveling"
+              >
+                traveling
               </a>
-            </div>
-
-            <div className='grid grid-cols-2 gap-2 bg-[linear-gradient(to_right,#ff0048_0,#c300c3_100%)] rounded-3xl mx-4 -mt-4 px-4 py-2 z-10 relative'>
-              <div>
-                <p className='text-sm text-white flex gap-1'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" />
-                  </svg>
-                  Web Application
-                </p>
-              </div>
-              <div>
-                <p className='text-sm text-white flex gap-1 justify-end'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  May 1 2023
-                </p>
-              </div>
-            </div>
-
-            <div className='px-6 pt-5 pb-7'>
-              <h4 className='text-blue font-semibold text-2xl font-poppins mb-3'>
-                <a href="#details">Best technology for Web Development</a>
-              </h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+              <span className="text-gray-600">— 28 Dec 2020</span>
+            </p>
+            <a
+              href="/"
+              aria-label="Category"
+              title="Visit the East"
+              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+            >
+              Visit the East
+            </a>
+            <p className="mb-2 text-gray-700">
+              Sed ut perspiciatis unde omnis iste natus error sit sed quia
+              consequuntur magni voluptatem doloremque.
+            </p>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn more
+            </a>
           </div>
-          <div className="shadow rounded-xl overflow-hidden">
-            <div className='w-full h-48'>
-              <a href="#details">
-                <img src= '/blog-dg-3.jpg' alt="blog img" className="w-full h-full object-cover" />
+        </div>
+        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <img
+            src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            className="object-cover w-full h-64"
+            alt=""
+          />
+          <div className="p-5 border border-t-0">
+            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a
+                href="/"
+                className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                aria-label="Category"
+                title="traveling"
+              >
+                traveling
               </a>
-            </div>
-
-            <div className='grid grid-cols-2 gap-2 bg-[linear-gradient(to_right,#ff0048_0,#c300c3_100%)] rounded-3xl mx-4 -mt-4 px-4 py-2 z-10 relative'>
-              <div>
-                <p className='text-sm text-white flex gap-1'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" />
-                  </svg>
-                  Web Application
-                </p>
-              </div>
-              <div>
-                <p className='text-sm text-white flex gap-1 justify-end'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  May 1 2023
-                </p>
-              </div>
-            </div>
-
-            <div className='px-6 pt-5 pb-7'>
-              <h4 className='text-blue font-semibold text-2xl font-poppins mb-3'>
-                <a href="#details">Best technology for Web Development</a>
-              </h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+              <span className="text-gray-600">— 28 Dec 2020</span>
+            </p>
+            <a
+              href="/"
+              aria-label="Category"
+              title="Simple is better"
+              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+            >
+              Simple is better
+            </a>
+            <p className="mb-2 text-gray-700">
+              Sed ut perspiciatis unde omnis iste natus error sit sed quia
+              consequuntur magni voluptatem doloremque.
+            </p>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn more
+            </a>
           </div>
-          <div className="shadow rounded-xl overflow-hidden">
-            <div className='w-full h-48'>
-              <a href="#details">
-                <img src= '/blog-dg-3.jpg' alt="blog img" className="w-full h-full object-cover" />
+        </div>
+        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <img
+            src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            className="object-cover w-full h-64"
+            alt=""
+          />
+          <div className="p-5 border border-t-0">
+            <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
+              <a
+                href="/"
+                className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
+                aria-label="Category"
+                title="traveling"
+              >
+                traveling
               </a>
-            </div>
-
-            <div className='grid grid-cols-2 gap-2 bg-[linear-gradient(to_right,#ff0048_0,#c300c3_100%)] rounded-3xl mx-4 -mt-4 px-4 py-2 z-10 relative'>
-              <div>
-                <p className='text-sm text-white flex gap-1'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" />
-                  </svg>
-                  Web Application
-                </p>
-              </div>
-              <div>
-                <p className='text-sm text-white flex gap-1 justify-end'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  May 1 2023
-                </p>
-              </div>
-            </div>
-
-            <div className='px-6 pt-5 pb-7'>
-              <h4 className='text-blue font-semibold text-2xl font-poppins mb-3'>
-                <a href="#details">Best technology for Web Development</a>
-              </h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div className="shadow rounded-xl overflow-hidden">
-            <div className='w-full h-48'>
-              <a href="#details">
-                <img src= '/blog-dg-3.jpg' alt="blog img" className="w-full h-full object-cover" />
-              </a>
-            </div>
-
-            <div className='grid grid-cols-2 gap-2 bg-[linear-gradient(to_right,#ff0048_0,#c300c3_100%)] rounded-3xl mx-4 -mt-4 px-4 py-2 z-10 relative'>
-              <div>
-                <p className='text-sm text-white flex gap-1'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" />
-                  </svg>
-                  Web Application
-                </p>
-              </div>
-              <div>
-                <p className='text-sm text-white flex gap-1 justify-end'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  May 1 2023
-                </p>
-              </div>
-            </div>
-
-            <div className='px-6 pt-5 pb-7'>
-              <h4 className='text-blue font-semibold text-2xl font-poppins mb-3'>
-                <a href="#details">Best technology for Web Development</a>
-              </h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-          <div className="shadow rounded-xl overflow-hidden">
-            <div className='w-full h-48'>
-              <a href="#details">
-                <img src= '/blog-dg-3.jpg' alt="blog img" className="w-full h-full object-cover" />
-              </a>
-            </div>
-
-            <div className='grid grid-cols-2 gap-2 bg-[linear-gradient(to_right,#ff0048_0,#c300c3_100%)] rounded-3xl mx-4 -mt-4 px-4 py-2 z-10 relative'>
-              <div>
-                <p className='text-sm text-white flex gap-1'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 6h.008v.008H6V6z" />
-                  </svg>
-                  Web Application
-                </p>
-              </div>
-              <div>
-                <p className='text-sm text-white flex gap-1 justify-end'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  May 1 2023
-                </p>
-              </div>
-            </div>
-
-            <div className='px-6 pt-5 pb-7'>
-              <h4 className='text-blue font-semibold text-2xl font-poppins mb-3'>
-                <a href="#details">Best technology for Web Development</a>
-              </h4>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+              <span className="text-gray-600">— 28 Dec 2020</span>
+            </p>
+            <a
+              href="/"
+              aria-label="Category"
+              title="Film It!"
+              className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
+            >
+              Film It!
+            </a>
+            <p className="mb-2 text-gray-700">
+              Sed ut perspiciatis unde omnis iste natus error sit sed quia
+              consequuntur magni voluptatem doloremque.
+            </p>
+            <a
+              href="/"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+            >
+              Learn more
+            </a>
           </div>
         </div>
       </div>
-    </section>
-  )
-}
+    </div>
+  );
+};
 
 export default Blogs
