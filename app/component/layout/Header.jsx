@@ -42,57 +42,60 @@ const Header = () => {
               </Link>
             </h3>
           </div>
-          <div className="lg:block hidden">
+          <div className="lg:block hidden ">
             <ul className="text-right font-sans text-sm tracking-wider font-semibold ">
-              <li className="inline-block   hover:underline  underline-offset-8 decoration-sky-500/30 ">
+              <li className="inline-block px-3 group  transition-all duration-300 ease-in-out ">
                 <Link
                   href="/about"
-                  className=" font-medium px-3 py-2 text-blue uppercase"
+                  className=" font-medium py-2 text-blue uppercase  bg-left-bottom bg-gradient-to-r from-cyan-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px]  transition-all duration-500 ease-out "
                 >
                   About
                 </Link>
               </li>
-              <li className="inline-block">
+              <li
+                className="inline-block px-3 
+                 group  transition-all duration-300 ease-in-out"
+              >
                 <Link
                   href="/services"
-                  className=" font-medium px-3 py-2 text-blue uppercase"
+                  className=" font-medium py-2 text-blue uppercase bg-left-bottom bg-gradient-to-r from-cyan-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px]  transition-all duration-500 ease-out "
                 >
                   Services
                 </Link>
               </li>
-              <li className="inline-block">
+              <li className="inline-block px-3   group  transition-all duration-300 ease-in-out">
                 <Link
                   href="/products"
-                  className=" font-medium px-3 py-2 text-blue uppercase"
+                  className=" font-medium py-2 text-blue uppercase bg-left-bottom bg-gradient-to-r from-cyan-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px]  transition-all duration-500 ease-out "
                 >
                   Products
                 </Link>
               </li>
-              <li className="inline-block">
+              <li className="inline-block px-3   group  transition-all duration-300 ease-in-out">
                 <Link
                   href="/blogs"
-                  className=" font-medium px-3 py-2 text-blue uppercase"
+                  className=" font-medium py-2 text-blue uppercase bg-left-bottom bg-gradient-to-r from-cyan-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px]  transition-all duration-500 ease-out "
                 >
                   Blogs
                 </Link>
               </li>
-              <li className="inline-block">
+              <li className="inline-block px-3  group  transition-all duration-300 ease-in-out">
                 <Link
                   href="/gallery"
-                  className=" font-medium px-3 py-2 text-blue uppercase"
+                  className=" font-medium py-2 text-blue uppercase bg-left-bottom bg-gradient-to-r from-cyan-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px]  transition-all duration-500 ease-out"
                 >
                   Gallery
                 </Link>
               </li>
-              <li className="inline-block">
+              <li className="inline-block px-3  group  transition-all duration-300 ease-in-out">
                 <Link
                   href="/contact"
-                  className=" font-medium px-3 py-2 text-blue uppercase"
+                  className=" font-medium py-2 text-blue uppercase bg-left-bottom bg-gradient-to-r from-cyan-500 to-blue-500 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px]  transition-all duration-500 ease-out"
                 >
                   Contact
                 </Link>
               </li>
-              <li className="inline-block">
+              <li className="inline-block ">
                 <a
                   href="tel:+8801679383667"
                   className="btn btn-1 ml-4 flex items-center"

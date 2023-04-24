@@ -36,7 +36,7 @@ export default function BannerSection() {
         <div className="grid grid-cols-[1fr_1fr] items-center gap-5 min-h-[calc(100vh-160px)]">
           <div>
             <h2 className="text-blue font-bold font-poppins lg:text-[52px] text-4xl lg:leading-[60px] leading-10 lg:mb-8 mb-6">
-              Creative Web <br /> Development <br /> Company
+             Software <br /> Development <br /> Unit
             </h2>
             <p className="lg:text-xl text-base leading-7 mb-8">
               {/* We are a Web Development based IT company in Bangladesh who provides top quality service. */}
