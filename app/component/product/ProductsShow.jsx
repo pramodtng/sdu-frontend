@@ -20,7 +20,7 @@ const ProductsShow = () => {
           <div>
             <a href="#live">
               <img src='/prod-1.jpg' alt="product img" className="w-100 rounded-lg mb-4 hover:scale-110" />
-              <h4 className="text-blue font-semibold text-2xl font-poppins mb-4">Tashicell Electronics Website</h4>
+              <h4 className="text-blue font-semibold text-2xl font-poppins mb-4">Tashi Electronics Website</h4>
             </a>
           </div>
         </div>
