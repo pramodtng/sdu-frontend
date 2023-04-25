@@ -17,7 +17,7 @@ const Footer = () => {
   })
   return (
     <>
-      <div className="lg:py-12 py-8 bg-gray-50">
+      <div className="lg:py-12 py-8 bg-gray-50 border-t-2">  
         <div className="container max-w-7xl mx-auto px-2">
           <div className="grid lg:grid-cols-[1fr_1fr_1fr_1fr] grid-cols-1 lg:gap-5 gap-2">
             <div className="text-center">
