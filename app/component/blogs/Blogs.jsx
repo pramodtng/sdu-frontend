@@ -4,7 +4,7 @@ import localizedFormat from "dayjs/plugin/localizedFormat";
 dayjs.extend(localizedFormat);
 
 const Blogs = (blog) => {
-  console.log(JSON.stringify(blog));
+  // console.log(JSON.stringify(blog));
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-8 grid-cols-3">
@@ -39,6 +39,11 @@ const Blogs = (blog) => {
                   <p className="mb-2 text-gray-700 font-sans">
                     {blogs.attributes.content}
                   </p>
+                  <a href="/" aria-label=""
+                    className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-accent-400 hover:text-purple-800"
+                  >
+                    Learn more
+                  </a>
                 </div>
               </div>
             </div>

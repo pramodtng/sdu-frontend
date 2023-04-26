@@ -17,7 +17,7 @@ const Footer = () => {
   })
   return (
     <>
-      <div className="lg:py-12 py-8 bg-gray-50 border-t-2">  
+      <div className="lg:py-12 py-8 bg-gray-50 border-t-2">
         <div className="container max-w-7xl mx-auto px-2">
           <div className="grid lg:grid-cols-[1fr_1fr_1fr_1fr] grid-cols-1 lg:gap-5 gap-2">
             <div className="text-center">
@@ -31,7 +31,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="text-center">
-              <h5 className="text-blue font-medium font-sans text-xl mb-3">
+              <h5 className="text-blue font-bold font-poppins  text-sm mb-3 uppercase">
                 Contact Us
               </h5>
               <ul className="text-sm">
@@ -103,7 +103,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="text-center">
-              <h5 className="text-blue font-medium font-sans text-xl mb-3">
+              <h5 className="text-blue font-bold font-poppins  text-sm mb-3 uppercase">
                 Company
               </h5>
               <ul className="text-sm">
@@ -119,7 +119,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="text-center">
-              <h5 className="text-blue font-medium font-sans text-xl mb-3">
+              <h5 className="text-blue font-bold font-poppins  text-sm mb-3 uppercase">
                 Our Policy
               </h5>
               <ul className="text-sm">
