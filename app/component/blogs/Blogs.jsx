@@ -41,7 +41,7 @@ const Blogs = (blog) => {
                   <p className="mb-2 text-gray-700 font-sans">
                     {blogs.attributes.content}
                   </p>
-                  <a href={`/blog/${blogs.id}`} aria-label=""
+                  <a href="/" aria-label=""
                     className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-accent-400 hover:text-purple-800"
                   >
                     Learn more

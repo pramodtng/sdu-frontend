@@ -9,7 +9,7 @@ export const metadata = {
 
 export async function getImages() {
   const images = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/galleries?populate=*`)
-  return images.json()
+  return await images.json()
 }
 
 const page = async() => {
