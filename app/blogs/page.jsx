@@ -20,7 +20,6 @@ const page = async () => {
   return (
     <>
       <BannerSection />
-      {/* <Categories /> */}
       <Blogs blog={blogs} />
     </>
   );
