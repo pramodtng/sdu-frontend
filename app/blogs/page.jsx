@@ -12,7 +12,7 @@ export async function getBlogs() {
     `${process.env.NEXT_PUBLIC_STRAPI_URL}/blogs?populate=*`,
     { cache: "no-cache" }
   );
-  return blogs.json();
+  return await blogs.json();
 }
 
 const page = async () => {

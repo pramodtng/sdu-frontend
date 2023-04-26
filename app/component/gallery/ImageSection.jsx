@@ -2,10 +2,11 @@ import Image from "next/image";
 import React from "react";
 
 const ImageSection = (image) => {
+  // console.log(JSON.stringify(image));
   return (
     <section className="lg:py-20 py-12">
       <div className="container max-w-6xl mx-auto px-2">
-        <div className="grid grid-cols-3 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
           {image.image.data.map(function (images) {
             return (
               <div key={images.id} className="relative block group h-full">
@@ -24,7 +25,7 @@ const ImageSection = (image) => {
                             group-hover:opacity-100 
                             group-hover:translate-y-0">
                       <div class="p-2">
-                        <center class="text-lg text-white font-poppins">
+                        <center class="text-lg font-bold text-black font-poppins">
                           {images.attributes.caption}
                         </center>
                       </div>
