@@ -38,7 +38,7 @@ const Header = () => {
             <h3 className="font-bold text-3xl font-poppins text-slate-800">
               <Link href="/">
                 {" "}
-                <img className=" w-[70px] h-[60px]" src="lo.png" alt="logo" />
+                <img className=" w-[70px] h-[60px]" src="/lo.png" alt="logo" />
               </Link>
             </h3>
           </div>
