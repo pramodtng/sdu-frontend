@@ -4,7 +4,12 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['res.cloudinary.com']
+    deviceSizes: [320, 420, 768, 1024, 1200],
+    domains: ['res.cloudinary.com'],
+    path: '/_next/image',
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    loader: 'default',
+    layout: 'fixed',
   }
 }
 

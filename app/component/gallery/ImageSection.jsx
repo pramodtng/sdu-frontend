@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 
 const ImageSection = (image) => {
-  // console.log(JSON.stringify(image));
   return (
     <section className="lg:py-20 py-12">
       <div className="container max-w-6xl mx-auto px-2">      
