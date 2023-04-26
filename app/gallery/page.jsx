@@ -8,16 +8,17 @@ export const metadata = {
 }
 
 export async function getImages() {
-  // const images = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/galleries?populate=*`)
-  // return images.json()
+  const images = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/galleries?populate=*`)
+  return images.json()
 }
 
 const page = async() => {
-  // const images = await getImages();
+  const images = await getImages();
+  // console.log(JSON.stringify(images))
   return (
     <>
       <BannerSection />
-      <ImageSection />
+      <ImageSection image={images}/>
     </>
   )
 }
