@@ -38,11 +38,11 @@ const Blogs = (blog) => {
                   <h1 className="mb-3 text-xs font-semibold tracking-wide uppercase">
                     {blogs.attributes.title}
                   </h1>
-                  <p className="mb-2 text-gray-700 font-sans">
-                    {blogs.attributes.content}
-                  </p>
-                  <a href="/" aria-label=""
-                    className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-accent-400 hover:text-purple-800"
+                  <h2 className="mb-2 text-gray-700 font-sans">
+                    {blogs.attributes.subtitle}
+                  </h2>
+                  <a href= {`/blog/${blogs.id}`} aria-label=""
+                    className="inline-flex items-center font-medium transition-colors duration-200  hover:text-blue-400 cursor-pointer text-sm"
                   >
                     Learn more
                   </a>
