@@ -10,14 +10,20 @@ export const metadata = {
   title: 'About Us',
   description: 'Details about SDU',
 }
+export async function getTeams(){
+  const teams =await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/teams?populate=*`,
+    { cache: "no-cache" });
+   return await teams.json();
+}
 
-const page = () => {
+const page = async() => {
+  const teams = await getTeams()
   return (
     <>
       <BannerSection />
       <AboutSection />
       <WhyChooseUs />
-      <TeamSection />
+      <TeamSection team={teams}/>
     </>
   )
 }

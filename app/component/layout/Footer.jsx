@@ -72,7 +72,7 @@ const Footer = () => {
                   </svg>
                   <div>
                     {/* <h5 className="text-xl font-semibold">Phone</h5> */}
-                    <a href="#f">+975 - 7777777</a>
+                    <a href="#f">+975 - 77889977</a>
                   </div>
                 </li>
                 <li className="flex justify-center gap-3 mb-3">

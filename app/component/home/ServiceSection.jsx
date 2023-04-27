@@ -10,7 +10,7 @@ export default function ServiceSection() {
       before:bg-contain before:z-[-1]">
       <div className="container max-w-6xl mx-auto px-2">
         <div className='mb-14'>
-          <p className="uppercase text-pink text-center mb-3">Services We provided</p>
+          <p className="uppercase text-pink text-center mb-3">Services We provide</p>
           <h2 className="text-blue font-semibold text-4xl font-poppins text-center">Our Awesome Technological Services</h2>
         </div>
         <div className="grid lg:grid-cols-[1fr_1fr_1fr_1fr] grid-cols-1 gap-6">
