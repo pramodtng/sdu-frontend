@@ -7,12 +7,19 @@ export const metadata = {
   title: 'Products',
   description: 'List of products developed by SDU'
 }
+export async function getProducts() {
+  const products = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/products?populate=*`)
+  return await products.json()
+}
 
-const pages = () => {
+
+const pages = async() => {
+  const products = await getProducts();
+ 
   return (
     <>
       <BannerSection />
-      <ProductsShow />
+      <ProductsShow product={products}/>
     </>
   )
 }
