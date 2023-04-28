@@ -9,24 +9,28 @@ const ContactArea = () => {
   return (
     <section className="py-10 lg:py-20">
       <div className="container max-w-6xl mx-auto px-2">
-        <div className="w-full pb-2">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d870.042595356303!2d89.65756815485162!3d27.440238831986537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbt!4v1682061215303!5m2!1sen!2sbt"
-            title="map" scrolling="no" frameborder="0"
-            width="100%" height="300px"
+        <div className="w-full pb-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d870.042595356303!2d89.65756815485162!3d27.440238831986537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sbt!4v1682061215303!5m2!1sen!2sbt"
+            title="map"
+            scrolling="no"
+            frameborder="0"
+            width="100%"
+            height="300px"
             className=""
             loading="lazy"
           />
         </div>
-        <div className="grid lg:grid-cols-[2fr_3fr] grid-cols-1">
-          <div className="bg-green-100 p-6">
-            <h4 className="text-blue font-semibold text-3xl font-poppins mb-4">
+        <div className="grid lg:grid-cols-[1fr_3fr] grid-cols-1">
+          <div className="border-solid border p-6">
+            <h4 className="text-blue font-semibold text-2xl font-poppins mb-4">
               Contact Information
             </h4>
             <ul>
               <li className="flex gap-4 mb-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 mt-1"
+                  className="h-5 w-6 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -39,14 +43,14 @@ const ContactArea = () => {
                   ></path>
                 </svg>
                 <div>
-                  <h5 className="text-xl font-semibold mb-1">Email</h5>
+                  <h5 className="text-lg font-semibold mb-1">Email</h5>
                   <a href="mailto:assuretechbd@gmail.com">help@gmail.com</a>
                 </div>
               </li>
               <li className="flex gap-4 mb-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 mt-1"
+                  className="h-5 w-6 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -59,14 +63,14 @@ const ContactArea = () => {
                   ></path>
                 </svg>
                 <div>
-                  <h5 className="text-xl font-semibold mb-1">Phone</h5>
-                  <a href="tel:+8801679383667">+975 7777777</a>
+                  <h5 className="text-lg font-semibold mb-1">Phone</h5>
+                  <a href="tel:+8801679383667">+975 77889977</a>
                 </div>
               </li>
               <li className="flex gap-4 mb-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-8 w-8 mt-1"
+                  className="h-5 w-6 mt-1"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth="2"
@@ -84,41 +88,57 @@ const ContactArea = () => {
                   ></path>
                 </svg>
                 <div>
-                  <h5 className="text-xl font-semibold mb-1">
-                    Address
-                  </h5>
-                  <a href="https://goo.gl/maps/SHkRe94QMEhs8iKRA">Thimphu, Bhutan</a>
+                  <h5 className="text-lg font-semibold mb-1">Address</h5>
+                  <a href="https://goo.gl/maps/SHkRe94QMEhs8iKRA">
+                    Thimphu, Bhutan
+                  </a>
                 </div>
               </li>
             </ul>
           </div>
           <div className="p-6">
-            <h4 className="text-blue font-semibold text-4xl font-poppins mb-3">
+            <h4 className="text-blue font-semibold text-3xl font-poppins mb-3">
               Get in touch
             </h4>
             <p>We will catch you as early as we receive the message</p>
             <form className="mt-6">
               <div className="flex gap-8">
                 <div className="w-1/2">
-                  <input type="text" className="p-2 border-b-2 border-gray-400 w-full text-black" placeholder="Your Name" required />
+                  <input
+                    type="text"
+                    className="p-2 border-b-2 border-gray-400 w-full text-black"
+                    placeholder="Your Name"
+                    required
+                  />
                 </div>
                 <div className="w-1/2">
-                  <input type="email" className="p-2 border-b-2 border-gray-400 w-full text-black" placeholder="Your Email" required />
+                  <input
+                    type="email"
+                    className="p-2 border-b-2 border-gray-400 w-full text-black"
+                    placeholder="Your Email"
+                    required
+                  />
                 </div>
               </div>
               <div className="mt-4">
-                <textarea rows="4" className="p-2 border-b-2 border-gray-400 w-full text-black" placeholder="How can we help you?" required></textarea>
+                <textarea
+                  rows="4"
+                  className="p-2 border-b-2 border-gray-400 w-full text-black"
+                  placeholder="How can we help you?"
+                  required
+                ></textarea>
               </div>
               <div className="mt-8">
-                <button type="submit" className="btn btn-pink px-12">Submit</button>
+                <button type="submit" className="btn btn-pink px-8">
+                  Submit
+                </button>
               </div>
             </form>
           </div>
-
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default ContactArea
