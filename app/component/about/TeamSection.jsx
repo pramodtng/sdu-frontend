@@ -1,7 +1,6 @@
 import React from 'react'
 
 const TeamSection = (team) => {
-  // console.log(JSON.stringify(team))
   return (
     <div>
       <section class="bg-white dark:bg-gray-900">

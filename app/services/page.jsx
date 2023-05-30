@@ -10,12 +10,18 @@ export const metadata = {
   description: 'List of services'
 
 }
+export async function getServices() {
+  const services = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/services?populate=*`)
+  return await services.json()
+}
 
-const page = () => {
+
+const page = async() => {
+   const services = await getServices();
   return (
     <>
       <BannerSection />
-      <ServiceOverview />
+      <ServiceOverview service={services}/>
       <TechnologyUsed />
     </>
   )

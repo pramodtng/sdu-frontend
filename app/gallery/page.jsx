@@ -14,7 +14,6 @@ export async function getImages() {
 
 const page = async() => {
   const images = await getImages();
-  // console.log(JSON.stringify(images))
   return (
     <>
       <BannerSection />

@@ -80,3 +80,42 @@ input:focus,
 textarea:focus {
     outline: none;
 }
+
+/* for gallery image carousel customized*/
+   .legends {
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      margin-left: -36%;
+      width: 70%;
+      border-radius: 10px;
+      background: #f5f3f3;
+      color: #0b0a0a;
+      padding: 10px;
+      font-size: 14px;
+      text-align: center;
+      opacity: 0.25;
+      -webkit-transition: opacity 0.35s ease-in-out;
+      -moz-transition: opacity 0.35s ease-in-out;
+      -ms-transition: opacity 0.35s ease-in-out;
+      -o-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out; }
+
+    .carousels .carousel-status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    font-size: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+    color: #fff
+}
+
+.carousel:hover .slide .legends {
+    opacity: 0.8
+}

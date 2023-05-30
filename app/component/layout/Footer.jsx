@@ -52,7 +52,7 @@ const Footer = () => {
                   </svg>
                   <div>
                     {/* <h5 className="text-xl font-semibold">Email</h5> */}
-                    <a href="#ds">help@gmail.com</a>
+                    <a href="#ds">info@tashicell.com</a>
                   </div>
                 </li>
                 <li className="flex justify-center gap-3 mb-3">

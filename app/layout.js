@@ -1,6 +1,8 @@
 import Footer from './component/layout/Footer'
 import Header from './component/layout/Header'
 import './globals.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 
 export const metadata = {

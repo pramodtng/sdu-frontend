@@ -5,6 +5,8 @@ import localizedFormat from "dayjs/plugin/localizedFormat";
 dayjs.extend(localizedFormat);
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import gfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 export async function getBlogsById(id) {
   const data = await fetch(
@@ -13,6 +15,13 @@ export async function getBlogsById(id) {
   return await data.json();
 }
 
+function LinkRenderer(props) {
+  return (
+    <a href={props.href} target="_blank" rel="noreferrer">
+      {props.children}
+    </a>
+  );
+}
 const page = async ({ params }) => {
   const id = params.id;
   const data = await getBlogsById(id);
@@ -121,9 +130,20 @@ const page = async ({ params }) => {
                   </div>
                 </div>
                 <di className="mb-8 text-base font-thin leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  <ReactMarkdown
+                  {/* <ReactMarkdown
                     children={data.data.attributes.content}
                     remarkPlugins={[remarkGfm]}
+                  /> */}
+                  <ReactMarkdown
+                    components={{ a: LinkRenderer }}
+                    children={data.data.attributes.content}
+                    rehypePlugins={[rehypeRaw]}
+                    remarkPlugins={[gfm]}
+                    transformImageUri={(uri) =>
+                      uri.startsWith("http")
+                        ? uri
+                        : `${process.env.NEXT_PUBLIC_STRAPI_URL}${uri}`
+                    }
                   />
                 </di>
               </div>
