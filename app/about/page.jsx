@@ -22,7 +22,7 @@ const page = async() => {
     <>
       <BannerSection />
       <AboutSection />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
       <TeamSection team={teams}/>
     </>
   )

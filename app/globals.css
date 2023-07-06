@@ -129,6 +129,9 @@ textarea:focus {
  
 
 }
+.carousel .control-dots .dot{
+    background-color: #007bff!important;
+}
 
 .slide-out {
   transform: translateX(110%);

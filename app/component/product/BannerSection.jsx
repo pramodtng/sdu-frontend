@@ -1,8 +1,10 @@
 import React from 'react'
 
+
 const BannerSection = () => {
   return (
     <section className="lg:pt-28 mt-20 pt-20 lg:pb-20 pb-10 bg-[url('https://plus.unsplash.com/premium_photo-1668473400164-0607cf92b61c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80')]">
+    
       <div className="container max-w-6xl mx-auto px-2 ">
         <h2 className="text-blue font-bold font-poppins text-5xl text-left">
           Our Products
