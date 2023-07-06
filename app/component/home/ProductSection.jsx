@@ -4,10 +4,10 @@ import React from "react";
 export default function ProductSection({res1, res2}) {
   return (
     <section
-      className="home-product lg:py-24 py-16 relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[380px]
+      className="bg-[#ECF5FF] lg:py-24 py-16 relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[380px]
        before:z-[-1]"
     >
-      <div className="container max-w-6xl mx-auto px-2">
+      <div className="container max-w-6xl mx-auto px-2 ">
         <div className="mb-14">
           <p className="uppercase text-pink text-center mb-3">our work</p>
           <h2 className="text-blue font-semibold text-4xl font-poppins text-center">

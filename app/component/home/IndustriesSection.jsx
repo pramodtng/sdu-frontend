@@ -8,9 +8,9 @@ export default function IndustriesSection() {
         <div className="grid lg:grid-cols-[2fr_4fr] grid-cols-1 gap-6 items-center">
           <div className='lg:pr-6'>
             <p className="uppercase text-pink mb-3">industries we work for</p>
-            <h2 className="text-blue font-semibold text-4xl font-poppins mb-6">Helping Businesses in All Domains</h2>
+            <h2 className="text-blue font-semibold text-4xl font-poppins mb-6">Helping Businesses in All Domain</h2>
             <p className='mb-8'>
-              We are here for help all domains business. Just tell us which industries application you needs.
+              We are here to help all domain business. Just tell us which industries application you needs.
             </p>
           </div>
           <div>
@@ -18,22 +18,22 @@ export default function IndustriesSection() {
               <div className="lg:w-1/4 w-1/2 px-2 mb-4">
                 <div className='w-full bg-teal-300 rounded-tl-2xl rounded-br-2xl rounded-tr-[36px] rounded-bl-[36px] text-center p-4 h-40 flex flex-col 
                   items-center justify-center hover:shadow-lg'>
-                  <img src='/icon-2.png' alt="icon" className="max-w-full h-auto mx-auto mb-2" />
-                  <p className="text-blue">Digital Marketing</p>
+                  <img src='/mobile.png' alt="icon" className="max-w-full h-auto mx-auto mb-2" />
+                  <p className="text-blue">Mobile Application</p>
                 </div>
               </div>
               <div className="lg:w-1/4 w-1/2 px-2 mb-4">
                 <div className='w-full bg-amber-100 rounded-tl-2xl rounded-br-2xl rounded-tr-[36px] rounded-bl-[36px] text-center p-4 h-40 flex flex-col 
                   items-center justify-center hover:shadow-lg'>
-                  <img src='/icon-3.png' alt="icon" className="max-w-full h-auto mx-auto mb-2" />
+                  <img src='/ecommerce.png' alt="icon" className="max-w-full h-auto mx-auto mb-2" />
                   <p className="text-blue">Ecommerce Development</p>
                 </div>
               </div>
               <div className="lg:w-1/4 w-1/2 px-2 mb-4">
                 <div className='w-full bg-green-200 rounded-tl-2xl rounded-br-2xl rounded-tr-[36px] rounded-bl-[36px] text-center p-4 h-40 flex flex-col 
                   items-center justify-center hover:shadow-lg'>
-                  <img src='/icon-5.png' alt="icon" className="max-w-full h-auto mx-auto mb-2" />
-                  <p className="text-blue">Banking Service</p>
+                  <img src='/cloud.png' alt="icon" className="max-w-full h-auto mx-auto mb-2" />
+                  <p className="text-blue">Web and Mail Hosting</p>
                 </div>
               </div>
               <div className="lg:w-1/4 w-1/2 px-2 mb-4">

@@ -17,21 +17,21 @@ const Footer = () => {
   })
   return (
     <>
-      <div className="lg:py-12 py-8 bg-gray-50 border-t-2">
+      <div className="lg:py-12 py-8 bg-[#0066aa] border-t-2">
         <div className="container max-w-7xl mx-auto px-2">
           <div className="grid lg:grid-cols-[1fr_1fr_1fr_1fr] grid-cols-1 lg:gap-5 gap-2">
             <div className="text-center">
-              <h3 className="text-blue text-xl font-bold font-sans mb-3">
+              <h3 className="text-white text-xl font-bold font-sans mb-3">
                 <span>{text}</span>
                 <Cursor cursorColor="#027bc1" />
               </h3>
-              <p className=" text-gray-700 text-sm">
+              <p className=" text-white text-sm">
                 We are a Software Development Unit based IT company in Thimphu
                 who provides top quality service.
               </p>
             </div>
-            <div className="text-center">
-              <h5 className="text-blue font-bold font-poppins  text-sm mb-3 uppercase">
+            <div className="text-center text-white">
+              <h5 className="text-White font-bold font-poppins  text-sm mb-3 uppercase">
                 Contact Us
               </h5>
               <ul className="text-sm">
@@ -102,11 +102,11 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="text-center">
-              <h5 className="text-blue font-bold font-poppins  text-sm mb-3 uppercase">
+            <div className="text-center text-white">
+              <h5 className="text-White font-bold font-poppins  text-sm mb-3 uppercase">
                 Company
               </h5>
-              <ul className="text-sm">
+              <ul className="text-sm text-white">
                 <li className="mb-2">
                   <Link href="/contact">Contact Us</Link>
                 </li>
@@ -118,8 +118,8 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="text-center">
-              <h5 className="text-blue font-bold font-poppins  text-sm mb-3 uppercase">
+            <div className="text-center text-white">
+              <h5 className="text-white font-bold font-poppins  text-sm mb-3 uppercase">
                 Our Policy
               </h5>
               <ul className="text-sm">
@@ -137,10 +137,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="pt-4 pb-4 bg-gray-100">
-        <p className="text-center text-xs  font-light uppercase tracking-[0.3em]">
+      <div className="pt-4 pb-4 bg-[#005588]">
+        <p className="text-center text-xs text-white font-light uppercase tracking-[0.3em]">
           &copy; {new Date().getFullYear()}. All Rights Reserved by{" "}
-          <span className="text-sky-700">SDU</span>
+          <span >SDU</span>
         </p>
       </div>
     </>

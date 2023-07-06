@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 const ServiceOverview = (service) => {
@@ -23,7 +24,7 @@ const ServiceOverview = (service) => {
                   </div>
                   <div>
                     <p className="uppercase text-pink mb-3">overview</p>
-                    <p>{services.attributes.description}</p>
+                    <p className="text-justify align-middle">{services.attributes.description}</p>
                   </div>
                   <br></br>
                 </div>
