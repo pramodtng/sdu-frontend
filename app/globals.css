@@ -1,11 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* for google fonts */
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;900&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;800&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;800&display=swap');
 /* custom styles */
 * {
     transition: 1.2s cubic-bezier(.17,.85,.438,.99);
@@ -137,18 +134,4 @@ textarea:focus {
 .slide-out {
   transform: translateX(110%);  
   }
-
-.particles-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: #007bff;
-}
-
-.particles canvas {
-  height: 100%;
-}
 
