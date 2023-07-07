@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+
   experimental: {
     appDir: true,
   },
@@ -9,8 +10,7 @@ const nextConfig = {
     path: '/_next/image',
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     loader: 'default',
-    layout: 'fixed',
-  }
+  },
 }
 
 module.exports = nextConfig
