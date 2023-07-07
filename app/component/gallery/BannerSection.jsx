@@ -8,7 +8,7 @@ const Banner = () => {
   const particlesOptions = {
     background: {
       color: {
-        value: "transparent",
+        value: "transparent"
       },
     },
     fpsLimit: 120,
@@ -90,9 +90,12 @@ const Banner = () => {
     await loadFull(main);
   };
   return (
-    <section className="lg:pt-28 mt-20 pt-20 lg:pb-1 pb-10 ">
-      <Particles init={particlesInit} options={particlesOptions} />
-      <div className="container max-w-6xl mx-auto px-2 ">
+    <section className="lg:pt-28 mt-20 pt-20 lg:pb-1 pb-10 relative">
+      {/* <Particles init={particlesInit} options={particlesOptions} className = "particles"/> */}
+      <div className="particles-container">
+        <Particles init={particlesInit} options={particlesOptions} className="particles" />
+      </div>
+      <div className="container max-w-6xl mx-auto px-2 relative">
         <h2 className="text-blue font-bold font-poppins text-5xl text-left">
           Gallery
         </h2>
