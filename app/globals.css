@@ -58,9 +58,9 @@ body {
 .home-banner::before {
     background: url('/banner-shap-2.png');
 }
-.home-about {
+/* .home-about {
     background: url('/about-dot_bg.png');
-}
+} */
 .home-service::before {
     background:  center top #d7f0fd;
 }

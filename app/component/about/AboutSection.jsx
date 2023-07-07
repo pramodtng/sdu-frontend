@@ -3,7 +3,7 @@ import React from 'react'
 
 const AboutSection = () => {
   return (
-    <section className="home-about lg:py-24 py-12">
+    <section className="home-about lg:py-24 py-12 relative  bg-white z-20">
       <div className="container max-w-6xl mx-auto px-2">
         <div className="grid lg:grid-cols-[1fr_1fr] grid-cols-1 gap-5 items-center">
           <div>

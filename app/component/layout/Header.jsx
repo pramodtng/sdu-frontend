@@ -36,9 +36,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`py-5 fixed top-0 left-0 right-0 z-[1000] transition-none ${
-          scrolled ? "bg-white shadow-sm h-[120px]" : ""
-        }`}
+        className={`py-5 fixed top-0 left-0 right-0 z-[1000] transition-none bg-white shadow-sm h-[100px`}
       >
         <div className="container max-w-full md:px-4 lg:px-6 px-2">
           <div className="grid lg:grid-cols-[2fr_5fr] grid-cols-[4fr_1fr] items-center ">

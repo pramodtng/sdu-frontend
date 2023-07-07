@@ -66,7 +66,7 @@ const ContactArea = () => {
   };
 
   return (
-    <section className="py-10 lg:py-20">
+    <section className="py-10 lg:py-20 bg-white relative z-10">
       <div className="container max-w-6xl mx-auto px-2">
         <div className="w-full pb-4">
           <iframe
@@ -209,20 +209,7 @@ const ContactArea = () => {
                 )}
               </div>
               <div className="mt-8">
-                {/* <button type="submit" className="btn btn-pink px-8">
-                  Submit
-                </button> */}
-
-                {/* {showSuccessMessage && (
-                  <p className="text-blue font-semibold text-sm my-2">
-                    Thank you! Your Message has been delivered.
-                  </p>
-                )}
-                {showFailureMessage && (
-                  <p className="text-blue">
-                    Oops! Something went wrong, please try again.
-                  </p>
-                )} */}
+            
 
                 <div className="flex flex-row items-center justify-start">
                   <button

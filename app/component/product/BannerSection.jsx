@@ -1,23 +1,34 @@
-import React from 'react'
-
+"use client";
+import React, { Component } from "react";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import { particlesOptions } from "../particle/particles.js";
 
 const BannerSection = () => {
+  const particlesInit = async (main) => {
+    await loadFull(main);
+  };
   return (
-    <section className="lg:pt-28 mt-20 pt-20 lg:pb-20 pb-10 bg-[url('https://plus.unsplash.com/premium_photo-1668473400164-0607cf92b61c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1032&q=80')]">
-    
-      <div className="container max-w-6xl mx-auto px-2 ">
-        <h2 className="text-blue font-bold font-poppins text-5xl text-left">
-          Our Products
-        </h2>
+    <section className="lg:pt-28 mt-20 pt-20 lg:pb-1 pb-10 ">
+      <div className="particles-container">
+        <Particles
+          init={particlesInit}
+          options={particlesOptions}
+          className="particles"
+        />
+      </div>
+      s
+      <div className="container max-w-6xl mx-auto px-2 relative z-10">
+        <h2 className="text-white  font-poppins text-5xl text-left">Our Products</h2>
         <nav
-          className="flex py-3 text-black  rounded-lg"
+          className="flex py-3 text-gray-700  rounded-lg  "
           aria-label="Breadcrumb"
         >
           <ol className="inline-flex items-center space-x-1 md:space-x-3">
             <li className="inline-flex items-center">
               <a
                 href="/"
-                className="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-black"
+                className="inline-flex items-center text-sm font-medium text-gray-400 hover:text-white dark:text-gray-400 dark:hover:text-black"
               >
                 <svg
                   aria-hidden="true"
@@ -48,7 +59,7 @@ const BannerSection = () => {
                   ></path>
                 </svg>
                 <span className="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">
-                  Products
+                  products
                 </span>
               </div>
             </li>
@@ -57,6 +68,6 @@ const BannerSection = () => {
       </div>
     </section>
   );
-}
+};
 
-export default BannerSection
+export default BannerSection;

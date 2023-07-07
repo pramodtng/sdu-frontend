@@ -15,7 +15,7 @@ const ProductsShow = (product) => {
   };
 
   return (
-    <section className="lg:py-16 py-8">
+    <section className="py-10 lg:py-20 bg-white relative z-10">
       <div className="container max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 ">
           {product.product.data.map(function (products) {
@@ -81,7 +81,6 @@ const ProductsShow = (product) => {
                         {selectedProduct.attributes.name}
                       </h2>
                       <div className="flex flex-wrap">
-                    
                         <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-full flex flex-col ">
                           {/* Display additional details of the selected product */}
                           {/* <h1>{selectedProduct.attributes.name}</h1> */}

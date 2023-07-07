@@ -3,7 +3,7 @@ import React from "react";
 
 const ServiceOverview = (service) => {
   return (
-    <section className="lg:py-20 py-12">
+    <section className="py-10 lg:py-20 bg-white relative z-10">
       <div className="container max-w-6xl mx-auto px-2">
         <div className="">
           <div>
@@ -24,11 +24,12 @@ const ServiceOverview = (service) => {
                   </div>
                   <div>
                     <p className="uppercase text-pink mb-3">overview</p>
-                    <p className="text-justify align-middle">{services.attributes.description}</p>
+                    <p className="text-justify align-middle">
+                      {services.attributes.description}
+                    </p>
                   </div>
                   <br></br>
                 </div>
-             
               );
             })}
           </div>

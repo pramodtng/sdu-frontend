@@ -17,7 +17,7 @@ const Footer = () => {
   })
   return (
     <>
-      <div className="lg:py-12 py-8 bg-[#0066aa] border-t-2">
+      <div className="lg:py-12 py-8 bg-[#0066aa] border-t-2 relative z-10">
         <div className="container max-w-7xl mx-auto px-2">
           <div className="grid lg:grid-cols-[1fr_1fr_1fr_1fr] grid-cols-1 lg:gap-5 gap-2">
             <div className="text-center">
@@ -122,22 +122,17 @@ const Footer = () => {
               <h5 className="text-white font-bold font-poppins  text-sm mb-3 uppercase">
                 Our Policy
               </h5>
-              <ul className="text-sm">
+              <ul className="text-sm">             
                 <li className="mb-2">
-                  <Link href="/coming-soon">Terms of use</Link>
+                  <Link href="/privacy-policy">Privacy policy</Link>
                 </li>
-                <li className="mb-2">
-                  <Link href="/coming-soon">Privacy policy</Link>
-                </li>
-                <li className="mb-2">
-                  <Link href="/coming-soon">Refund policy</Link>
-                </li>
+             
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className="pt-4 pb-4 bg-[#005588]">
+      <div className="pt-4 pb-4 bg-[#005588] relative z-10">
         <p className="text-center text-xs text-white font-light uppercase tracking-[0.3em]">
           &copy; {new Date().getFullYear()}. All Rights Reserved by{" "}
           <span >SDU</span>

@@ -3,7 +3,7 @@ import React from 'react'
 
 const WhyChooseUs = () => {
   return (
-    <section className="home-service lg:py-24 py-16 relative before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[380px]
+    <section className="home-service lg:py-24 py-16 relative z-10 before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-[380px]
       before:bg-contain before:z-[-1]">
       <div className="container max-w-6xl mx-auto px-2">
         <div className='mb-14'>
