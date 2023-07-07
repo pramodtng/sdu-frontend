@@ -7,7 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const ImageSection = ( image ) => {
   return (
-    <section className="lg:py-20 py-12">
+    <section className="lg:py-10 py-12">
       <div className=" max-w-6xl mx-auto px-2">
         <Carousel className="">
           {image.image.data.map((image) => (
