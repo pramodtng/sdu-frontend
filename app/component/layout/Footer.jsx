@@ -132,8 +132,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="pt-4 pb-4 bg-[#005588] relative z-10">
-        <p className="text-center text-xs text-white font-light uppercase tracking-[0.3em]">
+      <div className="pt-4 pb-4 bg-[#0066aa] relative z-10">
+        <p className="text-center text-xs text-white font-light uppercase">
           &copy; {new Date().getFullYear()}. All Rights Reserved by{" "}
           <span >SDU</span>
         </p>

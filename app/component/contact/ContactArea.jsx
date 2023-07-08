@@ -82,7 +82,7 @@ const ContactArea = () => {
         <div className="grid lg:grid-cols-[1fr_3fr] grid-cols-1">
           <div className="border-solid border p-6">
             <h4 className="text-blue font-semibold text-2xl font-poppins mb-4">
-              Contact Information
+              Contact Us
             </h4>
             <ul>
               <li className="flex gap-4 mb-6">
