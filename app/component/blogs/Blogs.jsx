@@ -13,14 +13,6 @@ const Blogs = (blog) => {
             return (
               <div key={blogs.id}>
                 <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
-                  {/* <Image
-                  src={blogs.attributes.image.data.attributes.url}
-                  width={500}
-                  height={320}
-                  style={{ objectFit: "cover" }}
-                  alt="blog"
-                  layout="fixed"
-                /> */}
                   <img
                     src={blogs.attributes.image.data.attributes.url}
                     alt="blog"
