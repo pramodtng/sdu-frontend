@@ -69,13 +69,12 @@ const ServiceOverview = () => {
                   <p className="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">------------</p>
                   <p className="mb-2 text-gray-600">Simplify and optimize your application management with SDU, your trusted partner for seamless solutions.</p>
                 </div>
-              );
-            })}
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    
   );
 };
 
