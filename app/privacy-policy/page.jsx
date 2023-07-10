@@ -1,6 +1,12 @@
 import React from "react";
 import { FaPhoneAlt, FaSearchLocation, FaEnvelopeOpen } from "react-icons/fa";
 
+
+export const metadata = {
+  title: 'Privacy Policy',
+  description: 'Privacy Policy of the SDU'
+}
+
 const Page = () => {
   return (
     <div class="container max-w-6xl mx-auto px-2 py-36 relative z-10">
