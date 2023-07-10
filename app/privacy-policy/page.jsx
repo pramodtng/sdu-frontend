@@ -6,7 +6,7 @@ const Page = () => {
     <div class="container max-w-6xl mx-auto px-2 py-36 relative z-10">
       <div class="row">
         <div class="col-12 p-2 text-justify">
-          <p className="text-2xl text-black ">Privacy Policy</p>
+          <p className="text-2xl text-black pb-4">Privacy Policy</p>
           <p>
             When you use TashiCell services and its applications, we are aware
             that you trust us with your valued information. Therefore, this
@@ -90,10 +90,10 @@ const Page = () => {
             such partners are treated as private information and are not
             disclosed.
           </p>
-          <h5>
-            <i class="fa fa-question-circle"></i> How do we use your
+          <p className="p-2 italic">
+           How do we use your
             information?
-          </h5>
+          </p>
           <p>
             We use the information we collect to provide convenient services,
             improve and develop new ones, improve user experience and the
@@ -131,10 +131,10 @@ const Page = () => {
             We will ask for your consent before using information for a purpose
             other than those that are set out in this Privacy Policy.
           </p>
-          <h5>
-            <i class="fa fa-question-circle"></i> How do we protect your
+          <p className="p-2 italic">
+             How do we protect your
             information?
-          </h5>
+          </p>
           <p>
             In order to strive towards information privacy and protection, we
             will always ask for your consent before using any information for
@@ -162,9 +162,9 @@ const Page = () => {
               <i class="fa fa-caret-right"></i> We do not use Malware Scanning.
             </li>
           </ul>
-          <h5>
-            <i class="fa fa-question-circle"></i> Do we use 'cookies'?
-          </h5>
+          <p className="p-2 italic font-bold">
+             Do we use 'cookies'?
+          </p>
           <p>
             <i>
               If you’re not familiar with the term cookies, please read about
@@ -269,7 +269,7 @@ const Page = () => {
             <i class="fa fa-question-circle"></i> <a name="contact-us"></a>{" "}
             Contact Us
           </h5>
-          <p>
+          <p className="pb-2">
             If there are any questions regarding this privacy policy, you may
             contact us using the information below:
           </p>

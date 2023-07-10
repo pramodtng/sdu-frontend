@@ -31,7 +31,7 @@ const Home = async() =>{
       <ServiceSection />
       <CounterSection />
       {/* <IndustriesSection /> */}
-      <Testimonials test={test}/>
+      {/* <Testimonials test={test}/> */}
     </>
   )
 }
