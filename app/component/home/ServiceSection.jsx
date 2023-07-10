@@ -33,8 +33,8 @@ export default function ServiceSection() {
             <div>
               <img src='/service-logo.png' alt="service" className="w-24 h-auto mb-10 mx-auto" />
             </div>
-            <h4 className='font-semibold text-blue text-2xl leading-8 font-poppins mb-3'>Wordpress Website</h4>
-            <p className='mb-5'>Make wordpress website from our free/premium theme collections.</p>
+            <h4 className='font-semibold text-blue text-2xl leading-8 font-poppins mb-3'>Web Development</h4>
+            <p className='mb-5'>We can design and develop websites at your budget with latest technologies</p>
             <p>
               <Link href="/contact" className='flex items-center justify-center font-medium font-poppins'>Book Now
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4 ml-2">
