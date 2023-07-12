@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import remarkGfm from "remark-gfm";
 import classNames from "classnames"; 
-import { Tab, initTE } from "tw-elements";
-initTE({ Tab });
+// import { Tab, initTE } from "tw-elements";
+// initTE({ Tab });
 
 const ProductsShow = (product) => {
   const [modal, setModal] = useState(false);
@@ -20,7 +20,7 @@ const ProductsShow = (product) => {
   return (
     <section className="py-10 lg:py-20 bg-white relative z-10">
       <div className="container max-w-6xl mx-auto">
-        {/* <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 ">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 ">
           {product.product.data.map(function (products) {
             return (
               <div
@@ -98,9 +98,9 @@ const ProductsShow = (product) => {
               </div>
             </div>
           )}
-        </div> */}
+        </div>
 
-<div class="flex items-start">
+{/* <div class="flex items-start">
   <ul
     class="mr-4 flex list-none flex-col flex-wrap pl-0"
     role="tablist"
@@ -191,7 +191,7 @@ const ProductsShow = (product) => {
       Tab 4 disabled vertical
     </div>
   </div>
-</div>
+</div> */}
       </div>
     </section>
   );
