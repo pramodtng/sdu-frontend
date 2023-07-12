@@ -84,7 +84,6 @@ const ProductsShow = (product) => {
                       </h2>
                       <div className="flex flex-wrap">
                         <div className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-full flex flex-col ">
-
                           <ReactMarkdown
                             children={selectedProduct.attributes.content}
                             remarkPlugins={[remarkGfm]}

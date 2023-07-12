@@ -4,7 +4,7 @@ import Blogs from "../component/blogs/Blogs";
 import Categories from "../component/blogs/Categories";
 
 export const metadata = {
-  title: "Blogs",
+  title: "Blogs & Annoucement",
   description: "Updates from SDU",
 };
 export async function getBlogs() {

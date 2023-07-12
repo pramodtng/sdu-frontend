@@ -130,10 +130,6 @@ const page = async ({ params }) => {
                   </div>
                 </div>
                 <di className="mb-8 text-base font-thin leading-relaxed text-body-color sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                  {/* <ReactMarkdown
-                    children={data.data.attributes.content}
-                    remarkPlugins={[remarkGfm]}
-                  /> */}
                   <ReactMarkdown
                     components={{ a: LinkRenderer }}
                     children={data.data.attributes.content}

@@ -8,11 +8,11 @@ const Blogs = (blog) => {
   return (
     <section className="py-10 lg:py-20 bg-white relative z-10">
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-        <div className="grid gap-8 grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-1 lg:grid-cols-3">
           {blog.blog.data.map(function (blogs) {
             return (
               <div key={blogs.id}>
-                <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+                {/* <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
                   <img
                     src={blogs.attributes.image.data.attributes.url}
                     alt="blog"
@@ -29,7 +29,7 @@ const Blogs = (blog) => {
                         {blogs.attributes.category.data.attributes.category}
                       </a>
                       <span className="text-gray-600">
-                        — {dayjs(blogs.attributes.publishedAt).format("LL")}
+                        — c
                       </span>
                     </p>
                     <h1 className="mb-3 text-xs font-semibold tracking-wide uppercase">
@@ -46,7 +46,38 @@ const Blogs = (blog) => {
                       Learn more
                     </a>
                   </div>
-                </div>
+                </div> */}
+                <article class="overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                  <img
+                    alt="Office"
+                    src={blogs.attributes.image.data.attributes.url}
+                    class="h-56 w-full object-cover"
+                  />
+
+                  <div class="bg-white p-4 sm:p-6">
+                    <time datetime="2022-10-10" class="block text-xs text-gray-500">
+                      <span className=" bg-blue-200 px-2 rounded-lg capitalize">{blogs.attributes.category.data.attributes.category}</span> - {dayjs(blogs.attributes.publishedAt).format("LL")}
+                    </time>
+
+                    <a href={`/blog/${blogs.id}`}>
+                      <h3 class="mt-0.5 text-lg text-gray-900">
+                        {blogs.attributes.title}
+                      </h3>
+                    </a>
+
+                    <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">
+                      {blogs.attributes.subtitle}
+                    </p>
+                  </div>
+                  <div class="sm:flex sm:items-end sm:justify-end">
+                    <a
+                      href= {`/blog/${blogs.id}`}
+                      class="block bg-blue-200 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-blue-400"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </article>
               </div>
             );
           })}
