@@ -62,13 +62,13 @@ const AboutSection = () => {
 
 
 
-      <div class="mt-20 grid grid-cols-12 items-center gap-x-2 sm:gap-x-6 lg:gap-x-8 px-2">
+      {/* <div class="mt-20 grid grid-cols-12 items-center gap-x-2 sm:gap-x-6 lg:gap-x-8 px-2">
         <div class="hidden md:block col-span-4 md:col-span-3">
           <img class="rounded-xl" src="/tashicel.jpg" alt="Image Description" />
         </div>
 
         <div class="col-span-4 md:col-span-3">
-          <img class="rounded-xl" src="https://images.unsplash.com/photo-1587613991119-fbbe8e90531d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1003&q=80" alt="Image Description" />
+          <img class="rounded-xl" src="/about2.jpg" alt="Image Description" />
         </div>
 
 
@@ -81,7 +81,7 @@ const AboutSection = () => {
           <img class="rounded-xl" src="/about.JPG" alt="Image Description" />
         </div>
 
-      </div>
+      </div> */}
 
     </div>
 
