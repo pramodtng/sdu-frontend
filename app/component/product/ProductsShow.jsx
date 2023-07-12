@@ -4,8 +4,7 @@ import React, { useState } from "react";
 import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 import remarkGfm from "remark-gfm";
 import classNames from "classnames"; 
-// import { Tab, initTE } from "tw-elements";
-// initTE({ Tab });
+
 
 const ProductsShow = (product) => {
   const [modal, setModal] = useState(false);
@@ -63,7 +62,7 @@ const ProductsShow = (product) => {
                 className={classNames(
                   "flex flex-col max-w-6xl max-h-screen px-4 mx-auto sm:px-6",
                   {
-                    "bg-opacity-75 ": modal, // Apply background blur class when modal is open
+                    "bg-opacity-75 ": modal, 
                   }
                 )}
               >
@@ -99,99 +98,6 @@ const ProductsShow = (product) => {
             </div>
           )}
         </div>
-
-{/* <div class="flex items-start">
-  <ul
-    class="mr-4 flex list-none flex-col flex-wrap pl-0"
-    role="tablist"
-    data-te-nav-ref>
-    <li role="presentation" class="flex-grow text-center">
-      <a
-        href="#pills-home03"
-        class="my-2 block rounded bg-neutral-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-primary-100 data-[te-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
-        id="pills-home-tab03"
-        data-te-toggle="pill"
-        data-te-target="#pills-home03"
-        data-te-nav-active
-        role="tab"
-        aria-controls="pills-home03"
-        aria-selected="true"
-        >Home</a
-      >
-    </li>
-    <li role="profile" class="flex-grow text-center">
-      <a
-        href="#pills-profile03"
-        class="my-2 block rounded bg-neutral-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-primary-100 data-[te-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
-        id="pills-profile-tab03"
-        data-te-toggle="pill"
-        data-te-target="#pills-profile03"
-        role="tab"
-        aria-controls="pills-profile03"
-        aria-selected="false"
-        >Profile</a
-      >
-    </li>
-    <li role="contact" class="flex-grow text-center">
-      <a
-        href="#pills-contact03"
-        class="my-2 block rounded bg-neutral-100 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 data-[te-nav-active]:!bg-primary-100 data-[te-nav-active]:text-primary-700 dark:bg-neutral-700 dark:text-white dark:data-[te-nav-active]:text-primary-700"
-        id="pills-contact-tab03"
-        data-te-toggle="pill"
-        data-te-target="#pills-contact03"
-        role="tab"
-        aria-controls="pills-contact03"
-        aria-selected="false"
-        >Contact</a
-      >
-    </li>
-    <li role="disabled" class="flex-grow text-center">
-      <a
-        href="#pills-disabled03"
-        class="pointer-events-none my-2 block rounded bg-neutral-200 px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-400 dark:bg-neutral-600 dark:text-neutral-500"
-        id="pills-disabled-tab03"
-        data-te-toggle="pill"
-        data-te-target="#pills-disabled03"
-        role="tab"
-        aria-controls="pills-disabled03"
-        aria-selected="false"
-        >Disabled</a
-      >
-    </li>
-  </ul>
-
-  <div class="my-2">
-    <div
-      class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-      id="pills-home03"
-      role="tabpanel"
-      aria-labelledby="pills-home-tab03"
-      data-te-tab-active>
-      Tab 1 content vertical
-    </div>
-    <div
-      class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-      id="pills-profile03"
-      role="tabpanel"
-      aria-labelledby="pills-profile-tab03">
-      Tab 2 content vertical
-    </div>
-    <div
-      class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-      id="pills-contact03"
-      role="tabpanel"
-      aria-labelledby="pills-contact-tab03">
-      Tab 3 content vertical
-    </div>
-    <div
-      class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
-      id="pills-disabled03"
-      role="tabpanel"
-      aria-labelledby="pills-disabled-tab03">
-      Tab 4 disabled vertical
-    </div>
-  </div>
-</div> */}
       </div>
     </section>
   );
