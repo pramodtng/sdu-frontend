@@ -5,7 +5,7 @@ import localizedFormat from "dayjs/plugin/localizedFormat";
 dayjs.extend(localizedFormat);
 
 const Blogs = (blog) => {
-  console.log(JSON.stringify(blog));
+  // console.log(JSON.stringify(blog));
   return (
     <section className="py-10 lg:py-20 bg-white relative z-10">
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
